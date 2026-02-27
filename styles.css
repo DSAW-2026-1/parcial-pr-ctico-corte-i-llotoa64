@@ -44,6 +44,15 @@ body {
     border-radius: 50%;
 }
 
+.group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.right {
+    justify-content: flex-end;
+}
 /* Posicionamiento con Grid */
 
 /* Primera fila */
