@@ -1,59 +1,39 @@
-# Registro de Iteraciones – Componente UI
+# Registro de Prompts
 
----
+## Prompt 1: Estructura (HTML semántico)
+Se solicitó generar una estructura HTML usando buenas prácticas de semántica.  
+Se utilizó `<main>` como contenedor principal y `<div>` para los elementos visuales.
 
-## Prompt 1 – Estructura HTML (Semántica)
-
-**Objetivo:** Definir la estructura semántica correcta utilizando etiquetas apropiadas.
-
-**Prompt utilizado:**
-
-> Genera la estructura HTML semántica para un componente de interfaz de usuario de 400px x 300px. Utiliza etiquetas correctas como `<main>` para el contenedor principal y `<div>` para los elementos internos. Aplica clases reutilizables para diferenciar cuadrados y círculos.
-
-**Conceptos técnicos aplicados:**
-
-- Semántica HTML5
-- Uso de clases reutilizables
+Se consideraron conceptos como:
 - Jerarquía del DOM
-- Separación de estructura y presentación
-- Especificidad baja mediante selectores de clase
+- Separación de responsabilidades (HTML vs CSS)
 
 ---
 
-## Prompt 2 – Estilos Base (Modelo de Caja y Diseño Visual)
+## Prompt 2: Estilos base
+Se pidió aplicar estilos base incluyendo:
+- Reset con `box-sizing: border-box`
+- Uso de unidades en `px`
+- Colores de fondo
+- Uso de clases reutilizables (`.square`, `.circle`)
 
-**Objetivo:** Aplicar colores, tamaños y modelo de caja.
-
-**Prompt utilizado:**
-
-> Aplica estilos CSS base al componente utilizando el modelo de caja (`box-sizing: border-box`), define dimensiones en px, colores de fondo, y usa `border-radius` para crear círculos. Centra el contenedor en el viewport utilizando Flexbox.
-
-**Conceptos técnicos aplicados:**
-
-- Modelo de caja (box model)
-- `box-sizing`
-- Unidades absolutas (px)
-- Flexbox (`justify-content`, `align-items`)
+Conceptos aplicados:
 - Especificidad de selectores
-- Reseteo universal con `*`
+- Modelo de caja (box model)
+- Uso de `border-radius` para crear círculos
 
 ---
 
-## Prompt 3 – Layout y Refinamiento (Grid)
+## Prompt 3: Layout y refinamiento
+Se refinó el diseño utilizando **CSS Grid** para lograr la distribución exacta.
 
-**Objetivo:** Alinear los elementos exactamente como en la imagen utilizando CSS Grid.
+Se aplicaron:
+- `grid-template-columns: repeat(4, 1fr)`
+- `grid-template-rows: repeat(2, 1fr)`
+- Posicionamiento con `grid-column` y `grid-row`
+- Alineación con `justify-self` y `align-self`
 
-**Prompt utilizado:**
-
-> Implementa un layout bidimensional usando CSS Grid con `grid-template-columns` y `grid-template-rows`. Posiciona los elementos usando la pseudo-clase `:nth-child()` y controla la alineación con `justify-items` y `align-items`.
-
-**Conceptos técnicos aplicados:**
-
-- CSS Grid
-- `grid-template-columns`
-- `grid-template-rows`
-- `justify-items`
-- `align-items`
-- Pseudo-clases (`:nth-child`)
-- Control de especificidad
-- Layout bidimensional
+Conceptos clave:
+- Grid Layout
+- Alineación en dos ejes
+- Distribución proporcional con `fr`
